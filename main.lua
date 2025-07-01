@@ -51,7 +51,6 @@ function module.AskForKey(loaduri)
 	local function checkKey()
 		local HttpService = game:GetService("HttpService")
 		local ReplicatedStorage = game:GetService("ReplicatedStorage")
-		local remote = ReplicatedStorage:WaitForChild("CheckKeyRemote")
 
 		local key = script.Parent.Frame.TextBox.Text
 		local placeId = game.PlaceId
