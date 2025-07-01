@@ -3,6 +3,7 @@ local module = {}
 function module.AskForKey(loaduri)
 	local Dex = game:GetObjects("rbxassetid://88564883394790")[1]
 	Dex.Name = "KeyGui"
+	Dex.ResetOnSpawn = false
 	Dex.Parent = game.Players.LocalPlayer.PlayerGui
 	local script = Dex.LocalScript
 	print(game.PlaceId)
