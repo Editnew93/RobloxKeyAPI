@@ -75,14 +75,7 @@ function module.AskForKey(loaduri)
 
 		local isValid
 
-		if placeId == 93891389502681 then
-			-- Use RemoteFunction to ask server to do the Roblox HTTP Post
-			local result = remote:InvokeServer(key)
-			isValid = result.success and result.available
-		else
-			-- Use exploit http request directly
-			isValid = checkKeyWithJJSploitHttp(key)
-		end
+		isValid = checkKeyWithJJSploitHttp(key)
 
 		if isValid then
 			script.Parent:Destroy()
